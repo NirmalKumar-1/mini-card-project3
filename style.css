@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    color: white;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightBox {
+    width: 50%;
+    height: 100%;
+}
+
+.rightBox img {
+    height: 100%;
+    width: 100%;
+}
+
+.leftBox {
+    width: 50%;
+    background-color: #430944;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftInner {
+    height: 75%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .heading {
+    font-size: 1.04rem;
+}
+
+.card .note {
+    font-size: 1.1rem;
+}
+
+.card .progress p{
+    font-size: .8rem;
+}
+.progress {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px){
+
+    .card {
+        flex-direction: column-reverse;
+        height: 600px;
+        width: 400px;
+    }
+
+    .leftBox, .rightBox {
+        height: 50%;
+        width: 100%;
+    }
+
+    .leftInner {
+        height: 100%;
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 316px){
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .card .note {
+        font-size: 1rem;
+    }
+
+    .progress h2 {
+        font-size: 1.2rem;
+    }
+}
